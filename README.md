@@ -49,12 +49,12 @@ cd ScarePi
 #### 8) Change Hostname (optional)
 1) Change the Hostname if wanted
 ```
-echo "Your-new-Hostname" > /etc/hostname
+sudo echo "Your-new-Hostname" > /etc/hostname
 reboot
 ```
 2) Change the Samba Password (Windows File Share) if wanted, but take care of escaping 
 ```
-yes "yournewpassword" | smbpasswd -a scarepi
+yes "yournewpassword" | sudo smbpasswd -a scarepi
 ```
 
 ## FAQ
