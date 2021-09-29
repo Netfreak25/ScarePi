@@ -85,5 +85,13 @@ do
         echo "No GPIO Trigger - Skipping"
     fi
   fi
+  if [ `ls /opt/scarepi/Playlists/ | wc -l` -eq 1 ]
+  then
+    if [ `ls /opt/scarepi/Playlists/Default/ | wc -l` -eq 0 ]
+      then
+        echo "Only default playlist without files"
+        sleep 30
+    fi
+  fi
   clear
 done

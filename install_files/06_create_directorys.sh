@@ -7,7 +7,7 @@ mkdir /opt/scarepi/Options
 mkdir /opt/scarepi/Trigger
 mkdir /opt/scarepi/Playlists/Default
 echo "HDMI" > /opt/scarepi/Options/sound
-echo "loop" > /opt/scarepi/Options/playmode
+echo "Loop" > /opt/scarepi/Options/playmode
 echo "Default" > /opt/scarepi/Options/playlist
 
 chown -R scarepi:www-data /opt/scarepi
