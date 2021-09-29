@@ -68,4 +68,4 @@ wget http://192.168.0.10/index.cgi?trigger=true
 ```
 #### 2) What is the Trigger for?
 - If you use Home-Automation you can call this url when a Event occurs, on for example a "Motion Sensor"
-- I am using it in combination with IOBroker. As soon as a Motion Sensors is troggered the URL gets called.
+- I am using it in combination with IOBroker. As soon as a Motion Sensors gets triggered the URL gets called and the Playback starts
