@@ -50,6 +50,7 @@ cd ScarePi
 1) Change the Hostname if wanted
 ```
 echo "Your-new-Hostname" > /etc/hostname
+reboot
 ```
 2) Change the Samba Password (Windows File Share) if wanted, but take care of escaping 
 ```
