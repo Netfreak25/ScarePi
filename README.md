@@ -1,5 +1,5 @@
 # ScarePi
-ScarePi is a console media player designed to play AtmosFX Sprites.
+ScarePi is a Linux Console Media Player designed to play AtmosFX Sprites.
 
 - This is a work in progress and has been created very quickly.
 - In my opinion the code is quite ugly, but it works
@@ -11,11 +11,11 @@ ScarePi is a console media player designed to play AtmosFX Sprites.
 
 ## Features
 - Media Player
-- Web Interface
-- Browse and delete Files in the /Videos folder 
+- Control via Web Interface
+- Browsing and deleting Files in the /Videos folder 
 - File upload is possible through Samba or Web
 - Creating or Deleting Playlists
-- Active Playlist can be choosed
+- Active Playlist can be choosen
 - 3,5mm Jack or HDMI Sound is supported
 - Videos can be either played in a loop or get triggered
 - At the Moment the Video can be triggered with a web hook (See FAQ)
@@ -25,13 +25,13 @@ ScarePi is a console media player designed to play AtmosFX Sprites.
 
 ## Installation
 #### 1) Install a fresh Raspberry Pi OS Lite 10.9
-1) To Flash the Pi with the Image use Raspberry Pi Imager, or whatever you want
+1) Flash the Pi with the Image using Raspberry Pi Imager, or whatever you want
 2) Make sure you are using a "Lite" Image without Desktop Environment
 #### 2) Enable ssh
 1) Copy the "ssh" file from the boot folder to the boot partition on your sd
 #### 3) Configure you WiFi
 1) Copy the "wpa_supplicant.conf" file from the boot folder to the boot partition on your sd
-2) Modify the file to your needs
+2) Modify the file according to your needs
 #### 4) Boot the Raspberry
 #### 5) Login with the user "pi" and password "raspberry"
 #### 6) Modify the "pi" User password
@@ -54,7 +54,7 @@ reboot
 ```
 2) Change the Samba Password (Windows File Share) if wanted, but take care of escaping 
 ```
-yes "yournewpassword" | sudo smbpasswd -a scarepi
+sudo smbpasswd -a scarepi
 ```
 
 ## FAQ
@@ -68,5 +68,5 @@ Use wget, your browser, or whatever you want
 wget http://192.168.0.10/index.cgi?trigger=true
 ```
 #### 2) What is the Trigger for?
-- If you use Home-Automation you can call this url when a Event occurs, on for example a "Motion Sensor"
+- If you are using Home-Automation you can call this url when a Event occurs, on for example a "Motion Sensor"
 - I am using it in combination with IOBroker. As soon as a Motion Sensors gets triggered the URL gets called and the Playback starts
